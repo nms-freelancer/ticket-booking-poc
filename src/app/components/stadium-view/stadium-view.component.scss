@@ -1,0 +1,45 @@
+#container {
+    background-color: #1d74aa;
+    height: 100vh; 
+  }
+
+  #tooltip {
+    background: cornsilk;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  svg {
+    border: 1px solid #000;
+  }
+  
+  [stage] {
+    fill: green;
+  }
+  
+  [zoom-control] {
+    cursor: pointer;
+     fill: transparent;
+  }
+  
+  [seat] {
+    fill: #efefef;
+  }
+  
+  [seat][locked] {
+    fill: #888888;
+  }
+  
+  [seat][locked="reserved"] {
+    fill: #00bfff;
+  }
+  
+  [seat][selected] {
+    fill: #ffe100;
+  }
+  
+  [seat]:not([selected]):not([locked]):hover {
+    fill: #ffffff;
+    cursor: pointer;
+  }

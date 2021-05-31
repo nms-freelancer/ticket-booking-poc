@@ -1,0 +1,13 @@
+<!-- <select class="form-select" [(ngModel)]="texture" (selectionChange)="onSelectionChange($event)">
+    <option *ngFor="let c of images" [value]="c">{{c}}</option>
+  </select> -->
+<canvas #canvas
+        (window:resize)="onResize($event)"
+        (dragenter)="onDragEnter($event)"
+        (dragleave)="onDragLeave($event)"
+        (dragover)="onDragOver($event)"
+        (drop)="onDrop($event)"
+        (mousedown)="onMouseDown($event)"
+        (mousemove)="onMouseMove($event)"
+        (mouseup)="onMouseUp($event)"
+        (wheel)="onWheel($event)"></canvas>

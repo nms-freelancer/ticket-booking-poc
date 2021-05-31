@@ -1,0 +1,16 @@
+<div id="container" class="d-flex align-items-end flex-column">
+    <div id="tooltip" display="none" style="position: absolute; display: none;"></div>
+
+    <svg id="x" class="h-100 w-100" xmlns="http://www.w3.org/2000/svg">
+        <g board>
+            <rect stage height="150" width="300" y="206.825647" x="206.459768" />
+        </g>
+    </svg>
+    <br />
+
+    <div class="pb-2">
+        <button class="btn btn-primary m-2" id="goBack" (click)="goBackClick()">Full Stadium View</button>
+        <button class="btn btn-primary m-2" id="reserve" (click)="bookClick()">Book</button>
+        <button class="btn btn-primary m-2" id="360View" (click)="threeViewClick()">360 View</button>
+    </div>
+</div>
